@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.earthquake {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: -webkit-fill-available;
+}
+
+
+@-webkit-keyframes EARTHQUAKE {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+      10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+@-moz-keyframes EARTHQUAKE {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+      10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+@-o-keyframes EARTHQUAKE {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+      10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+@keyframes EARTHQUAKE {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+      10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+.earthquake {
+    -webkit-animation: EARTHQUAKE 5s infinite;
+    /* Safari 4+ */
+    -moz-animation: EARTHQUAKE 5s infinite;
+    /* Fx 5+ */
+    -o-animation: EARTHQUAKE 5s infinite;
+    /* Opera 12+ */
+    animation: EARTHQUAKE 5s infinite;
+    /* IE 10+, Fx 29+ */
+}
+
+.earthquake:hover {
+    animation: EARTHQUAKE 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
